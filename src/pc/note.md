@@ -45,5 +45,15 @@ All in All ,你可以有多个干爹（接口），但只能有一个亲爹（ �
 
 kotlin的接口可以添加默认实现
 
+**数据类和单例类**
+
+data class Cellphone(var brand:String ,val price:Double)
+//class之前有data这一关键字的时候便声明其为一个数据类
+这样搞会声明一个数据类,自动生成toString方法和Hashcode的方法
+较为简单
+
+单例类可以避免创建重复的实例
+
+
 
  
