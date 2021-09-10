@@ -1,8 +1,8 @@
 package pc
 
-class Person {
-    var name =""
-    var age  =0
+open class Person (val name:String,var age:Int){
+
+
 
     fun eat(){
         println(name + " is eating.He is " + age + " years old")
