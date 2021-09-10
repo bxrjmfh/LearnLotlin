@@ -54,6 +54,11 @@ data class Cellphone(var brand:String ,val price:Double)
 
 单例类可以避免创建重复的实例
 
+**Lambda编程**
+
+集合的函数式API是用来入门 Lambda编程的绝佳示例，不过在此之前，我们得先学习创建集合的方式才行。
+传统意义上的集合主要就是List和Set，再广泛一点的话，像Map这样的键值对数据结构也可以包含进来。List、Set和Map在Java中都是接口，List的主要实现类是 ArrayList和LinkedList，Set的主要实现类是 HashSet，Map的主要实现类是 HashMap.
+
 
 
  
