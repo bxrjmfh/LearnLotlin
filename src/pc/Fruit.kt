@@ -65,14 +65,30 @@ fun main(){
 
 
 
-//    map
+/*/    map
 
     val newlist=list_3.map { it.uppercase() }
     for(fruit in newlist)
     {
         println(fruit)
     }
-//map函数是对于集合中的元素进行任意的映射转换
+//map函数是对于集合中的元素进行任意的映射转换*/
+
+
+
+//    filter函数
+    val newlist=list_3.filter { it.length<=5 }.map{it.uppercase()}
+    for(a in newlist)
+    {
+        println(a)
+    }
+//    map{}与filter{}可以同时使用
+
+//    any与all
+    val anyResult=list_3.any{it.length<3}
+    val allResult=list_3.all{it.length>5}
+    println("The any_result is "+anyResult+" The all_result is "+allResult)
+//    判断是否有一个和是否全部
 
 
 
