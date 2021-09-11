@@ -27,4 +27,41 @@ fun main(){
         println(fruit)
     }
 
+//    在该集合中找出名字长度最大的一个
+//    写法1：
+    var max=""
+    for(fruit in list_3)
+    {
+        if(fruit.length>max.length)
+        {
+            max=fruit
+        }
+    }
+    println("The max fruit is "+max)
+//写法2
+    val max_2=list_3.maxByOrNull { it.length }
+    println("The max fruit is "+max_2)
+//    val max_2=list_3.maxByOrNull { it.length }变化过程如下：
+//    val lambda ={fruit:String->fruit.length}
+//    {参数名：参数类型->函数体}
+//    val max_3=list.maxByOrNull(lambda)
+//    使用lambda
+
+//    不定义lambda变量，直接把花括号整进去
+//    val max_3=list.maxByOrNull({fruit:String->fruit.length})
+
+//    lambda是函数的最后一个参数的时候，可以把花括号放在外边
+//    val max_3=list.maxByOrNull(){fruit:String->fruit.length}
+
+//    若lambda是函数的唯一参数可以将空的括号省略
+//    val max_3=list.maxByOrNull{fruit:String->fruit.length}
+
+//    lambda在必要的时候可以不声明参数类型
+//    val max_3=list.maxByOrNull{fruit->fruit.length}
+
+//    只有一个参数的话也没有必要声明参数名
+    val max_3=list.maxByOrNull{it.length}
+//    如上
+
+
 }
