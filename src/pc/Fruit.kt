@@ -27,7 +27,7 @@ fun main(){
         println(fruit)
     }
 
-//    在该集合中找出名字长度最大的一个
+/*/    在该集合中找出名字长度最大的一个
 //    写法1：
     var max=""
     for(fruit in list_3)
@@ -61,7 +61,19 @@ fun main(){
 
 //    只有一个参数的话也没有必要声明参数名
     val max_3=list.maxByOrNull{it.length}
-//    如上
+//    如上*/
+
+
+
+//    map
+
+    val newlist=list_3.map { it.uppercase() }
+    for(fruit in newlist)
+    {
+        println(fruit)
+    }
+//map函数是对于集合中的元素进行任意的映射转换
+
 
 
 }
